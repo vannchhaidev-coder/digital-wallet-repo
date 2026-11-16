@@ -1,0 +1,19 @@
+[versions]
+springBoot = "3.3.4"
+springCloud = "2023.0.3"
+springDependencyManagement = "1.1.6"
+jjwt = "0.12.6"
+mapstruct = "1.6.3"
+lombok = "1.18.34"
+
+[libraries]
+jjwt-api = { module = "io.jsonwebtoken:jjwt-api", version.ref = "jjwt" }
+jjwt-impl = { module = "io.jsonwebtoken:jjwt-impl", version.ref = "jjwt" }
+jjwt-jackson = { module = "io.jsonwebtoken:jjwt-jackson", version.ref = "jjwt" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
